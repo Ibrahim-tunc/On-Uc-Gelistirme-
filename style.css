@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+
+:root{
+    --gray-blue: #6978A0;
+    --dark-blue: #0C2562;
+    --middle-blue: #1443C3;
+    --aqua-blue: #0085FF;
+    --black: #000;
+    --white: #fff;
+}
+
+html{ 
+    font-size: .88vw; 
+}
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.wrapper{
+    margin: 0 auto;
+    padding: 2% 12.5%;
+    display: block;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 5vw;
+}
+
+.logo img{
+        width: 100%;
+        max-height: 44px;
+        max-width: 93px;
+}
+
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items li a {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--gray-blue);
+    margin: 0 2vw;
+}
+
+
+button{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: .7rem;
+    box-sizing: border-box;
+    background-color: var(--white);
+    padding: .7rem 1.5rem;
+}
+
+.aqua-button{
+    color: var(--aqua-blue);
+    border: .17rem solid var(--aqua-blue);
+    box-shadow: 0px 0px 0px .1rem rgba(0, 133, 255, 0.2);    
+}
+
+/* İnfo Container */
+
+.info-container{
+    display: inline-block;
+    margin: 20vh 0;
+    width: 24vw;
+}
+
+
+.info-container > *:not(:first-child) {
+    margin-top: 2vw;
+}
+
+
+.info-container > p {
+    font-family: "Inter";
+    color: var(--gray-blue);
+    font-size: 1.17rem;
+}
+
+.info-container span {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 2.7rem;
+    color: var(--dark-blue);
+}
+
+.info-top{
+    display: inline-block;
+    font-weight: 500 !important;
+}
+
+
+.info-top img {
+    width: 4vw;
+    height: auto;
+    margin-bottom: -.3rem;
+}   
+
+
+.info-buttons{
+    display: flex;
+}
+
+.info-buttons button {
+    margin-right: 4%;
+}
+
+.active{
+    background-color: var(--middle-blue);
+    border: .17rem solid var(--middle-blue);
+    color: var(--white);
+}
+
+p:last-child {
+    font-size: 1rem;
+  }
+
+.call-container {
+    position: relative;
+    right: 0;
+    height: auto;
+    height: 75vh;
+    margin: 15vh 0;
+}
+
+.call-container > img:last-child{
+    position: absolute;
+    right: 3vw;
+    height: 55vh;
+    z-index: 2;
+    top: 12vh;
+}
+
+.call-container > img:first-child{
+    position: absolute;
+    height: 75vh;
+    z-index: 1;
+    right: 10vw;
+}
+
+.rectangle-conatiner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rectangle-conatiner-img .bla{
+    position: absolute;
+    height: 60%;
+    background-color: white;
+    z-index: 5;
+}
+
+
+.rectangle-conatiner *{
+    width: 35vw;
+}
+
+.rectangle-right img:first-child {
+    position: absolute;
+}
+
+.group-logo {
+    width: 2.5vw;
+    margin: 3vw 0 1vw 2.5vw;
+}
+
+.rectangle-right p {
+    width: 30vw;
+    margin: 0 2.5vw;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 2.09rem;
+    color: var(--dark-blue);
+}
+
+
+.rectangle-945-container{
+    position: relative;
+    width: 75vw;
+    margin: 3vw 0;
+}
+
+.rectangle-945-container > img {
+    position: absolute;
+    width: 75vw;
+    z-index: -1;
+}
+
+.left-container-945{
+    position: relative;
+    padding: 3vw 0 0 2vw ;
+    width: 35vw;
+}
+
+.left-container-945 > * {
+    color: var(--white);
+    margin-bottom: 1.5vw;
+}
+
+.left-container-945 span{
+    display: inline-block;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 2.7rem;
+    width: 27vw;
+}
+
+.left-container-945 p{
+    font-weight: 300;
+    font-family: "Inter";
+    font-size: 1.17rem;
+    line-height: 1.5vw;
+    opacity: 0.98;    
+}
+
+.left-container-945 .button{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    display: flex;
+    border-radius: .7rem;
+    padding: .8rem 1.5rem;
+    width: 11.5vw;
+    margin-top: 4vw;
+    justify-content: center;
+}
+
+.button p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.button img {
+    width: 1.3vw;
+    margin-left: 1vw;
+}
+
+
+.rc-988{     
+    margin: 15vw 0;
+    height: 80vh;
+    display: inline-block;
+}
+
+
+.rc-988 > img {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 80vw;
+}
+
+
+.rc-988-container {
+    display: inline-block;
+    width: 40vw;
+    position: relative;
+    left: 3.7vw;
+    top: 10vw;
+}
+
+.rc-988-container *{
+    margin-bottom: 3vh;
+}
+
+.rc-988-container > img {
+    width: 2.5vw;
+}
+
+.rc-988-container > p {
+    font-weight: 400;
+    font-family: "Inter";
+    font-size: 1rem;
+    line-height: 1.5vw;
+    opacity: 0.98;  
+    color: var(--gray-blue);
+}
+
+.rc-988-head p{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 2.11rem;
+    color: var(--dark-blue);
+}
+
+.rc-988-button{
+    color: var(--aqua-blue);
+    display: flex;
+}
+.rc-988-button p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.button img {
+    width: 1.3vw;
+    margin-left: 1vw;
+}
+
+.lfc-purp{
+    position: relative;
+    top: -4vw;
+}
+
+.lfc-purp-contianer span{
+    width: 30vw !important;
+}
+
+.rc-988-head > p{
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.temsilci{
+    position: relative;
+    left: 0;
+    top: 1vw;
+}
+
+.temsilci > p {
+    font-size: 1.1rem;
+    width: 60vw;
+}
+
+
+.temsilciler{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.temsilciler-row{
+    width: 49%;
+}
+
+.temsilciler-h{
+    display: block;
+    margin-bottom: 1vw;
+}
+
+.temsilciler-h img {
+    width: 100%;
+}
+
+.temsilci-t{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .7vw;
+}
+
+.temsilci-t img {
+    width:1.3vw
+}
+
+.temsilci-t p {
+    font-size: 1.1rem;
+    color: var(--dark-blue);  
+    font-weight: 600;
+    font-family: "poppins"; 
+}
+
+.rcl-218{
+    margin-top: 4vh;
+    position: relative;
+}
+
+.rcl-218-container{
+    position: relative;
+    top: 1.5vw;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 1.5vw;
+}
+
+.rcl-218 img {
+    position: absolute;
+    width: 100%;
+}
+
+
+.rcl-218-head > p {
+    font-size: 2.1rem;
+    font-family: "poppins";
+    color: var(--dark-blue);
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+
+
+.rcl-218-container > p{
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-blue);
+    text-align: center;
+}
+
+
+
+.rcl-218-logos{
+    margin: 0 auto;     
+    width: 40vw;
+    height: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0vw;
+    padding-left: 3vw;
+}
+
+
+
+.rcl-218-logos img {
+    width: 11vw;
+    margin-right: 0;
+}
+
+footer {
+    margin-top: 5vw;
+}
+
+footer > img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    column-gap: 1vw;
+}
+
+.footer-row{
+    margin-top: 5vw;
+}
+
+.footer-row ul{
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 1vw;
+}
+
+
+.footer-row > span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "poppins";
+    color: var(--white);
+}
+
+.footer-row ul {
+    margin-top: 2vw;
+}
+
+.footer-row ul li a{
+    font-size: 1rem;
+    font-family: "Inter";
+    font-weight: 300;
+    color: #9EA8C0;
+}
+
+
+.footer > img {
+    width: 100%;
+}
+
+.footer-bottom img {
+    width: 6vw;
+}
+
+.footer-bottom > p {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 0.9rem;
+    color:  #9EA8C0;;
+}
+
+.footer-bottom{    
+    display: flex;
+    justify-content: space-between;
+    margin-top:5vw;
+
+}
+
+.footer-line{
+    margin: 2vw 0;
+}
+
